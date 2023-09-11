@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    background-color: white;
+    height: 100%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.mobile {
+    height: 100%;
+}
+
+.hero-img {
+    background-image: url("./images/mobile-image-hero-1.jpg");
+    height: 45%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative; 
+}
+
+.navigation {
+    overflow: hidden;
+    position: relative;
+    padding: 50px 20px;
+    
+}
+
+.navigation a {
+    margin: 0 20px;
+}
+
+.navigation #links {
+    display: none;
+}
+
+.navigation #links a {
+    text-decoration: none;
+    color:  hsl(0, 0%, 0%);
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+#icon-close {
+    display: none;
+}
+
+.arrow-btn {
+    background-color: black;
+    border: 0px solid black;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.arrow-btn img {
+    
+}
+
+.button-group {
+    position: absolute;
+    bottom: 13px;
+    right: 0px;
+    display: inline-block;
+}
+
+#arrow-left {
+    float: left;
+}
+
+#arrow-right {
+    float: right;
+}
+
+P {
+    color: hsl(0, 0%, 63%)
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

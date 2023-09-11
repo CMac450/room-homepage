@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <title>Frontend Mentor | Room homepage</title>
 </head>
+
 <body>
-  
-  
-  <footer>
+  <div class="mobile">
+    <div class="hero-img">
+      <nav>
+        <div class="navigation" id="nav-menu">
+          <a href="javascript:void(0)" id="icon-open" onclick="openCloseNav()"><img src="./images/icon-hamburger.svg"
+              alt=""></a>
+          <a href="javascript:void(0)" id="icon-close" onclick="openCloseNav()"><img src="./images/icon-close.svg"
+              alt=""></a>
+          <a href="" id="logo"><img src="./images/logo.svg" alt=""></a>
+          <div id="links">
+            <a href="#home">home</a>
+            <a href="#shop">shop</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="button-group">
+        <button class="arrow-btn" id="arrow-left"><img src="./images/icon-angle-left.svg" alt=""></button>
+        <button class="arrow-btn" id="arrow-right"><img src="./images/icon-angle-right.svg" alt=""></button>
+      </div>
+    </div>
+
+    <div class="section-2">
+      <h1>Discover innovative ways to decorate</h1>
+
+      <p>
+        We provide unmatched quality, comfort, and style for property owners across the country. 
+        Our experts combine form and function in bringing your vision to life. Create a room in your 
+        own style with our collection and make your property a reflection of you and what you love.
+      </p>
+
+      <button>shop now <img src="./images/icon-arrow.svg" alt="right pointing arrow"></button>
+    </div>
+
+    <div class="section-3">
+      <img src="./images/image-about-dark.jpg" alt="">
+    </div>
+
+    <div class="section-4">
+      <h4>About our furniture</h4>
+
+      <p>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+
+      <button>shop now <img src="./images/icon-arrow.svg" alt="right pointing arrow"></button>
+    </div>
+
+    <div class="section-5">
+      <img src="./images/image-about-light.jpg" alt="">
+    </div>
+
+    <!-- <img src="./images/mobile-image-hero-1.jpg" alt="" class="mobile-img"> -->
+  </div>
+
+  <!-- <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Cassidy McMichael</a>.
     </div>
-  </footer>
+  </footer> -->
 
 </body>
+
 </html>
 
 <!--
