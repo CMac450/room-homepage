@@ -21,3 +21,37 @@ const openCloseNav = () => {
         l.style.display = "none";
     }
 }
+
+let slideIndex = 1;
+//showSlides(slideIndex);
+
+const setSlides = (n) => {
+    //console.log('hit setSlides');
+    showSlides(slideIndex += n);
+}
+
+const showSlides = (n) => {
+    let numSlides = 3;
+    let url1 = "./images/mobile-image-hero-1.jpg";
+    let url2 = "./images/mobile-image-hero-2.jpg";
+    let url3 = "./images/mobile-image-hero-3.jpg";
+    let div = document.getElementById("hero");
+
+    console.log(`value of n is: ${n}`);
+
+    switch (n) {
+        case 1: 
+            div.style.backgroundImage = `url(${url1})`;
+        break;
+        case 2:
+            div.style.backgroundImage = `url(${url2})`;
+        break;
+        case 3: 
+        div.style.backgroundImage = `url(${url3})`;
+        break;
+        default:
+            div.style.backgroundImage = `url(${url1})`;
+            n = 1;
+        break;
+    }
+}
