@@ -37,7 +37,7 @@ const showSlides = (n) => {
     let url3 = "./images/mobile-image-hero-3.jpg";
     let div = document.getElementById("hero");
 
-    console.log(`value of n is: ${n}`);
+    //console.log(`value of n is: ${n}`);
 
     switch (n) {
         case 1: 
@@ -51,7 +51,7 @@ const showSlides = (n) => {
         break;
         default:
             div.style.backgroundImage = `url(${url1})`;
-            n = 1;
+            slideIndex  = 1;
         break;
     }
 }
