@@ -5,141 +5,295 @@ body, html {
     font-family: 'League Spartan', sans-serif;
 }
 
-.mobile {
+.container {
     height: 100%;
 }
 
-.hero-img {
-    background-image: url("./images/mobile-image-hero-1.jpg");
-    height: 45%;
+
+
+/* .section-3 {
+    background-image: url("./images/mobile-image-about-dark.jpg");
+    height: auto;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative; 
 }
 
-.navigation {
-    overflow: hidden;
-    position: relative;
-    padding: 50px 20px;
-    
-}
-
-.navigation a {
-    margin: 0 20px;
-}
-
-.navigation #links {
-    display: none;
-}
-
-.navigation #links a {
-    text-decoration: none;
-    color:  hsl(0, 0%, 0%);
-    font-weight: 600;
-    margin: 0 10px;
-}
-
-.navigation #links a:hover {
-    text-decoration: underline;
-}
-
-#icon-close {
-    display: none;
-}
-
-.arrow-btn {
-    background-color: black;
-    border: 0px solid black;
-    padding: 15px;
-    cursor: pointer;
-}
-
-.arrow-btn:hover {
-    background-color: hsl(0, 0%, 27%);
-    border: 0px solid hsl(0, 0%, 27%);
-}
-
-.arrow-btn img {
-    
-}
-
-.button-group {
-    position: absolute;
-    bottom: 13px;
-    right: 0px;
-    display: inline-block;
-}
-
-#arrow-left {
-    float: left;
-}
-
-#arrow-right {
-    float: right;
-}
-
-.section-2, .section-4 {
-    padding: 0 30px;
-}
-
-P[class="body-text"] {
-    color: hsl(0, 0%, 63%);
-    font-weight: 500;
-    line-height: 22px;
-}
-
-p[class="heading-text-lg"] {
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: -2px;
-    line-height: 40px;
-    margin-bottom: 18px;
-}
-
-p[class="heading-text-sm"] {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 5px;
-    margin-bottom: 18px;
-}
-
-.shop-now-group {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    align-items: baseline;
-    cursor: pointer;
-}
-
-.shop-now-group:hover {
-    color: hsl(0, 0%, 63%);
-    cursor: pointer;
-}
-
-button[class="shop-now-btn"] {
-    border-style: none;
-    background-color: white;
-    /* margin-bottom: 70px; */
-}
-
-p[class="btn-text"] {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 15px;
-}
-
-
-
+.section-5 {
+    background-image: url("./images/mobile-image-about-light.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+} */
 
 
 .attribution {
     font-size: 11px;
     text-align: center;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        /* grid-auto-rows: minmax(100px, auto); */
+        grid-template-areas:
+
+        "hero hero hero hero hero hero hero main main main main main"
+        "hero hero hero hero hero hero hero main main main main main"
+        "ab1  ab1  ab1  ab2  ab2  ab2  ab2  ab2  ab2  ab3  ab3  ab3"
+        
+    }
+
+    .hero-img {
+        background-image: url("./images/mobile-image-hero-1.jpg");
+        /* height: auto; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; 
+
+        grid-area: hero;
+        border: 1px solid purple;
+    }
+
+    .section-2 {
+        grid-area: main;
+        position: relative;
+        border: 1px solid red;
+    }
+
+    .section-3 {
+        background-image: url("./images/image-about-dark.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative; 
+
+        grid-area: ab1;
+        border: 1px solid blue;
+    }
+
+    .section-4 {
+        grid-area: ab2;
+        border: 1px solid green;
+    }
+
+    .section-5 {
+        background-image: url("./images/image-about-light.jpg");
+        background-repeat: no-repeat;
+        height: auto;
+        background-size: contain;
+        position: relative; 
+
+        grid-area: ab3;
+        border: 1px solid yellow;
+    }
+
+    .button-group {
+        position: absolute;
+        bottom: 120;
+        right: 0px;
+        display: inline-block;
+    }
+
+
+    /* .hero-img {
+        border: 1px solid purple;
+        grid-column-start: 1;
+        grid-column-end: 11;
+        
+    } */
+
+    /* .section-2 {
+        border: 1px solid red;
+        grid-column-start: 11;
+        grid-column-end: 16;
+        
+    }
+
+    .hero-img, .section-2 {
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    .section-3 {
+        border: 1px solid blue;
+        grid-column: 1 / span 4;
+    }
+
+    .section-4 {
+        border: 1px solid green;
+        grid-column: 5 / span 10;
+    }
+
+    .section-5 {
+        border: 1px solid yellow;
+        grid-column: 10 / span 14;
+    }
+
+    .section-3, .section-4, .section-5 {
+        grid-row-start: 5;
+        grid-row-end: 5;
+    } */
+
+    /* .section-3 img, .section-5 img {
+        height: 100%;
+        width: auto;
+    } */
+
+
+}
+
+@media  screen and (max-width: 375px) {
+
+    
+    .hero-img {
+        background-image: url("./images/mobile-image-hero-1.jpg");
+        height: 45%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative; 
+    }
+
+    .section-3 {
+        background-image: url("./images/image-about-dark.jpg");
+        height: 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section-4 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .section-5 {
+        background-image: url("./images/image-about-light.jpg");
+        height: 30%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .navigation {
+        overflow: hidden;
+        position: relative;
+        padding: 50px 20px;
+        
+    }
+    
+    .navigation a {
+        margin: 0 20px;
+    }
+    
+    .navigation #links {
+        display: none;
+    }
+    
+    .navigation #links a {
+        text-decoration: none;
+        color:  hsl(0, 0%, 0%);
+        font-weight: 600;
+        margin: 0 10px;
+    }
+    
+    .navigation #links a:hover {
+        text-decoration: underline;
+    }
+    
+    #icon-close {
+        display: none;
+    }
+    
+    .arrow-btn {
+        background-color: black;
+        border: 0px solid black;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .arrow-btn:hover {
+        background-color: hsl(0, 0%, 27%);
+        border: 0px solid hsl(0, 0%, 27%);
+    }
+    
+    .arrow-btn img {
+        
+    }
+    
+    .button-group {
+        position: absolute;
+        bottom: 120;
+        right: 0px;
+        display: inline-block;
+    }
+    
+    #arrow-left {
+        float: left;
+    }
+    
+    #arrow-right {
+        float: right;
+    }
+    
+    .section-2, .section-4 {
+        padding: 0 30px;
+    }
+    
+    P[class="body-text"] {
+        color: hsl(0, 0%, 63%);
+        font-weight: 500;
+        line-height: 22px;
+    }
+    
+    p[class="heading-text-lg"] {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: -2px;
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+    
+    p[class="heading-text-sm"] {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 5px;
+        margin-bottom: 18px;
+    }
+    
+    .shop-now-group {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        align-items: baseline;
+        cursor: pointer;
+    }
+    
+    .shop-now-group:hover {
+        color: hsl(0, 0%, 63%);
+        cursor: pointer;
+    }
+    
+    button[class="shop-now-btn"] {
+        border-style: none;
+        background-color: white;
+        /* margin-bottom: 70px; */
+    }
+    
+    p[class="btn-text"] {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 15px;
+    } 
+}
