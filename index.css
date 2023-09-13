@@ -10,12 +10,12 @@ html {
     height: 100%;
 }
 
-.navigation #links a {
+/* .navigation #links a {
     text-decoration: none;
     color: hsl(0, 0%, 0%);
     font-weight: 600;
     margin: 0 10px;
-}
+} */
 
 .navigation #links a:hover {
     text-decoration: underline;
@@ -106,12 +106,11 @@ p[class="btn-text"] {
         display: grid;
         height: 100%;
         grid-template-columns: repeat(12, 1fr);
-        /* grid-auto-rows: minmax(100px, auto); */
+        grid-auto-rows: minmax(300px, auto);
         grid-template-areas:
 
             "hero hero hero hero hero hero hero main main main main main"
-            "hero hero hero hero hero hero hero main main main main main"
-            "ab1  ab1  ab1  ab1  ab2  ab2  ab2  ab2  ab2  ab3  ab3  ab3"
+            "ab1  ab1  ab1  ab2  ab2  ab2  ab2  ab2  ab2  ab3  ab3  ab3"
 
     }
 
@@ -124,18 +123,23 @@ p[class="btn-text"] {
         /* position: relative; */
 
         grid-area: hero;
-        border: 1px solid purple;
+        /* border: 1px solid purple; */
     }
 
     .section-2 {
         grid-area: main;
         position: relative;
-        border: 1px solid red;
+        /* border: 1px solid red; */
 
         align-content: center;
         justify-content: center;
 
         margin: 0 auto;
+        
+    }
+
+    .section-2:not(.button-group-section-2) {
+        padding: 80px 100px;
     }
 
     .section-3 {
@@ -145,24 +149,23 @@ p[class="btn-text"] {
         position: relative;
 
         grid-area: ab1;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+        width: auto;
     }
 
     .section-4 {
         grid-area: ab2;
-        border: 1px solid green;
-        /* padding: 20px 40px; */
-        /* padding-left: 50px;
-        padding-right: 50px; */
+        /* border: 1px solid green; */
         margin: 0 auto;
         align-content: center;
         justify-content: center;
         position: inherit;
     }
 
-    .section-4 p {
+    .section-4 {
         /* padding-left: 50px;
         padding-right: 50px; */
+        padding: 40px 50px;
     }
 
     .section-5 {
@@ -172,7 +175,7 @@ p[class="btn-text"] {
         position: relative;
 
         grid-area: ab3;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         width: 100%;
         height: auto;
     }
@@ -184,13 +187,48 @@ p[class="btn-text"] {
     .button-group-section-2 {
         position: absolute;
         bottom: 0;
-        right: 50;
+        /* right: 50; */
+        left: 0;
         display: inline-block;
+    }
+
+    .button-group-section-2 .arrow-btn {
+        padding: 25px;
     }
 
     #icon-open,
     #icon-close {
         display: none;
+    }
+
+    .navigation {
+        display: inline-flex;
+        margin-top: 70px;
+    }
+
+    #logo {
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+
+    .navigation #links a {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        margin: 0 10px;
+        /* text-underline-offset: 10px; */
+        width: 50%;
+     
+    }
+
+    .navigation #links a:hover {
+        /* text-decoration-line: underline;
+        text-decoration-thickness: 3px; 
+        width: 33%; */
+        text-decoration: none;
+        padding: 0 0 4px;
+        border-bottom: 3px solid white;
+        /* width: 50%; */
     }
 
 }
@@ -204,7 +242,6 @@ p[class="btn-text"] {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        border: 1px solid red;
     }
 
     .section-3 {
@@ -240,6 +277,13 @@ p[class="btn-text"] {
 
     .navigation #links {
         display: none;
+    }
+
+    .navigation #links a {
+        text-decoration: none;
+        color: hsl(0, 0%, 0%);
+        font-weight: 600;
+        margin: 0 10px;
     }
 
     /* .navigation #links a {
