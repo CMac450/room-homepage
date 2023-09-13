@@ -8,7 +8,6 @@ const openCloseNav = () => {
 
     if (e.style.display === "inline-block") {
         e.style.display = "none";
-        // n.style.opacity = "0";
         n.style.backgroundColor = "transparent";
         io.style.display = "inline-block";
         ic.style.display = "none";
@@ -23,15 +22,12 @@ const openCloseNav = () => {
 }
 
 let slideIndex = 1;
-//showSlides(slideIndex);
 
 const setSlides = (n) => {
-    //console.log('hit setSlides');
     showSlides(slideIndex += n);
 }
 
 const showSlides = (n) => {
-    let numSlides = 3;
     let mobileURL1 = "./images/mobile-image-hero-1.jpg";
     let mobileURL2 = "./images/mobile-image-hero-2.jpg";
     let mobileURL3 = "./images/mobile-image-hero-3.jpg";
@@ -41,16 +37,9 @@ const showSlides = (n) => {
     let div = document.getElementById("hero");
     let h = document.getElementById("heading-text-main");
     let p = document.getElementById("body-text-main");
-
     let vpw = window.innerWidth;
 
-    //console.log(`value of n is: ${n}`);
-    // console.log(`viewport width including scollbar: ${window.innerWidth}`);
-    // console.log(`type: ${typeof window.innerWidth}`);
-
-    if (vpw <= 375) {
-        //console.log('HIT 1');
-
+    if (vpw <= 899) {
             switch (n) {
             case 1:
                 div.style.backgroundImage = `url(${mobileURL1})`;
@@ -97,8 +86,6 @@ const showSlides = (n) => {
                 break;
         }
     } else {
-        //console.log('HIT 2');
-
         switch (n) {
             case 1:
                 div.style.backgroundImage = `url(${desktopURL1})`;

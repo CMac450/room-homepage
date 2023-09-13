@@ -10,13 +10,6 @@ html {
     height: 100%;
 }
 
-/* .navigation #links a {
-    text-decoration: none;
-    color: hsl(0, 0%, 0%);
-    font-weight: 600;
-    margin: 0 10px;
-} */
-
 .navigation #links a:hover {
     text-decoration: underline;
 }
@@ -52,7 +45,6 @@ p[class="heading-text-lg"] {
     font-weight: 600;
     letter-spacing: -2px;
     line-height: 40px;
-    /* margin-bottom: 18px; */
 }
 
 p[class="heading-text-sm"] {
@@ -60,7 +52,6 @@ p[class="heading-text-sm"] {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 5px;
-    /* margin-bottom: 18px; */
 }
 
 .shop-now-group {
@@ -80,7 +71,6 @@ p[class="heading-text-sm"] {
 button[class="shop-now-btn"] {
     border-style: none;
     background-color: white;
-    /* margin-bottom: 70px; */
 }
 
 p[class="btn-text"] {
@@ -116,26 +106,17 @@ p[class="btn-text"] {
 
     .hero-img {
         background-image: url("./images/desktop-image-hero-1.jpg");
-        /* height: auto; */
         background-repeat: no-repeat;
-        background-size: 100% 100%; /*100% 100%    contain*/
-        /* background-position:center; */
-        /* position: relative; */
-
+        background-size: 100% 100%;
         grid-area: hero;
-        /* border: 1px solid purple; */
     }
 
     .section-2 {
         grid-area: main;
         position: relative;
-        /* border: 1px solid red; */
-
         align-content: center;
         justify-content: center;
-
         margin: 0 auto;
-        
     }
 
     .section-2:not(.button-group-section-2) {
@@ -147,15 +128,12 @@ p[class="btn-text"] {
         background-repeat: no-repeat;
         background-size: 100% 100%;
         position: relative;
-
         grid-area: ab1;
-        /* border: 1px solid blue; */
         width: auto;
     }
 
     .section-4 {
         grid-area: ab2;
-        /* border: 1px solid green; */
         margin: 0 auto;
         align-content: center;
         justify-content: center;
@@ -163,8 +141,6 @@ p[class="btn-text"] {
     }
 
     .section-4 {
-        /* padding-left: 50px;
-        padding-right: 50px; */
         padding: 40px 50px;
     }
 
@@ -173,9 +149,7 @@ p[class="btn-text"] {
         background-repeat: no-repeat;
         background-size: 100% 100%;
         position: relative;
-
         grid-area: ab3;
-        /* border: 1px solid yellow; */
         width: 100%;
         height: auto;
     }
@@ -216,19 +190,14 @@ p[class="btn-text"] {
         color: hsl(0, 0%, 100%);
         font-weight: 600;
         margin: 0 10px;
-        /* text-underline-offset: 10px; */
         width: 50%;
      
     }
 
     .navigation #links a:hover {
-        /* text-decoration-line: underline;
-        text-decoration-thickness: 3px; 
-        width: 33%; */
         text-decoration: none;
         padding: 0 0 4px;
         border-bottom: 3px solid white;
-        /* width: 50%; */
     }
 
 }
@@ -286,17 +255,6 @@ p[class="btn-text"] {
         margin: 0 10px;
     }
 
-    /* .navigation #links a {
-        text-decoration: none;
-        color:  hsl(0, 0%, 0%);
-        font-weight: 600;
-        margin: 0 10px;
-    }
-    
-    .navigation #links a:hover {
-        text-decoration: underline;
-    } */
-
     #icon-close {
         display: none;
     }
@@ -310,7 +268,7 @@ p[class="btn-text"] {
 
     .button-group-section-2 {
         display: none;
-     }
+    }
 
     .section-2,
     .section-4 {
@@ -318,28 +276,16 @@ p[class="btn-text"] {
     }
 
     p[class="heading-text-lg"] {
-        /* font-size: 40px;
-        font-weight: 600;
-        letter-spacing: -2px;
-        line-height: 40px; */
         margin-bottom: 18px;
     }
 
     p[class="heading-text-sm"] {
-        /* font-size: 15px;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 5px; */
         margin-bottom: 18px;
     }
 
     .shop-now-group {
-        /* display: flex;
-        flex-direction: row; */
         margin-top: 10px;
         margin-bottom: 50px;
-        /* align-items: baseline;
-        cursor: pointer; */
     }
 
 }
